@@ -15,6 +15,7 @@ Global
 		{EDE22E39-403C-4D55-96DD-EFA2AE570C54}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDE22E39-403C-4D55-96DD-EFA2AE570C54}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDE22E39-403C-4D55-96DD-EFA2AE570C54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDE22E39-403C-4D55-96DD-EFA2AE570C54}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
