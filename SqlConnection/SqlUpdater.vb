@@ -1,6 +1,4 @@
-﻿Imports PoSApp
-
-Public Class SqlUpdater
+﻿Public Class SqlUpdater
     Inherits SqlRetriever
 
     Public Sub New()
