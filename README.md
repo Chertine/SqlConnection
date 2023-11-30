@@ -46,6 +46,18 @@ As of the current version, the tempate supports the following properties:
         
         The Parameters property of the SqlClient.SqlCommand class.
         
+    - **Method** ExecuteNonQuery()
+    
+        An exposure of the SqlClient.SqlCommand.ExecuteNonQuery() method.
+        
+    - **Method** ChangeDatabase(DatabaseName)
+    
+        An exposure of the SqlClient.SqlConnection.ChangeDatabase() method.
+        
+    - **Method** Open() and Close()
+    
+        The exposures of respectively SqlClient.SqlConection.Open() and SqlClient.SqlConnection.Close() methods.
+        
 2. SqlRetriever (Inherits from SqlInterface):
 
     - **Property** DataTable
