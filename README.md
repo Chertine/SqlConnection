@@ -48,17 +48,21 @@ As of the current version, the tempate supports the following properties:
         
     - **Method** ExecuteNonQuery()
     
-        An exposure of the SqlClient.SqlCommand.ExecuteNonQuery() method.
+        An exposure of the SqlClient.SqlCommand.ExecuteNonQuery method.
         
     - **Method** ChangeDatabase(DatabaseName)
     
-        An exposure of the SqlClient.SqlConnection.ChangeDatabase() method.
+        An exposure of the SqlClient.SqlConnection.ChangeDatabase method.
         
     - **Method** Open() and Close()
     
-        The exposures of respectively SqlClient.SqlConection.Open() and SqlClient.SqlConnection.Close() methods.
+        The exposures of respectively SqlClient.SqlConection.Open and SqlClient.SqlConnection.Close methods.
         
 2. SqlRetriever (Inherits from SqlInterface):
+
+    - **Field** DbName
+  
+        The DbName to be used for data retrieving (set this instead of using the ChangeDatabase method)
 
     - **Property** DataTable
         
@@ -66,13 +70,13 @@ As of the current version, the tempate supports the following properties:
 
     - **Method** Retrieve()
         
-        An interface of DataAdapter.Fill() that will be used on the DataTable property.
+        An interface of DataAdapter.Fill that will be used on the DataTable property.
         
 3. SqlUpdater (Inherits from SqlRetriever):
 
     - **Method** Update(UpdateType)
         
-        An interface of DataAdapter.Update() that will execute either insert query or update query depends on the specified UpdateType.
+        An interface of DataAdapter.Update that will execute either insert query or update query depends on the specified UpdateType.
 
 In addition, this template provides an extension to SqlClient.SqlParameterCollection which allows you to do:
 
