@@ -1,6 +1,6 @@
 ﻿Imports System.Runtime.CompilerServices
 
-Module ParameterExtensions
+Public Module ParameterExtensions
     <Extension()>
     Public Function AddFromColumn(aParameters As SqlClient.SqlParameterCollection, parameterName As String, sourceColumn As String) As SqlClient.SqlParameter
         Dim NewParam As New SqlClient.SqlParameter
