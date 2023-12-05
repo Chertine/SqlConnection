@@ -12,6 +12,7 @@
     End Sub
 
     Public Enum UpdateType
+        Delete
         Insert
         Update
     End Enum
@@ -20,6 +21,8 @@
     Public Sub Update(updateType As UpdateType)
         Using DataAdapter As New SqlClient.SqlDataAdapter
             Select Case updateType
+                Case UpdateType.Delete
+                    DataAdapter.DeleteCommand = Command
                 Case UpdateType.Insert
                     DataAdapter.InsertCommand = Command
                 Case UpdateType.Update
